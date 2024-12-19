@@ -1,0 +1,69 @@
+/* Contenedor principal que envuelve los dos componentes */
+.main-container {
+    display: flex;
+    justify-content: space-evenly; /* Cambiar a 'space-evenly' o 'flex-start' para reducir el espacio entre ellos */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    padding: 5rem;
+    margin-top: -8rem; /* Aplica un margen negativo para subir los contenedores */
+}
+
+/* Estilo para los contenedores de Tecnologías y Herramientas */
+.container, .container-tools {
+    max-width: 20rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    margin: 0 1rem; /* Agregar margen pequeño para espacio entre contenedores */
+}
+
+/* Estilo para los títulos */
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Para que los títulos ocupen toda la anchura disponible */
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4F4F4F;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Estilo para la lista de herramientas */
+.tool-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+    gap: 1.5rem; /* Espacio entre las herramientas */
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilo para cada elemento de la lista */
+.tool-item {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    color: #4F4F4F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 8rem;
+    cursor: pointer;
+}
+
+/* Estilo para el icono de cada herramienta */
+.tool-icon {
+    margin-right: 0.5rem; /* Agrega un espacio entre el icono y el nombre */
+    font-size: 1.5rem;
+    color: #FA996C;
+}
+
+/* Opcional: Efecto de hover para mover el contenedor de la herramienta */
+.tool-item:hover {
+    transform: translateY(-8px); /* Mueve el contenedor de la herramienta hacia arriba */
+    transition: transform 0.3s ease-in-out; /* Agrega transición suave para el icono */
+}

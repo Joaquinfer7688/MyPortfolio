@@ -1,0 +1,80 @@
+/* Asegúrate de que el contenedor principal ocupe todo el espacio de la pantalla */
+.contactContainer {
+    display: flex;
+    justify-content: center;  /* Centrado horizontal */
+    align-items: center;      /* Centrado vertical */
+    min-height: 100vh;         /* Asegura que ocupe toda la altura de la ventana */
+    flex-direction: column;   /* Alineación de los elementos en columna */
+    padding: 2rem;
+}
+
+.Title {
+    text-align: center;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra tanto el texto como el formulario */
+    justify-content: center;
+  }
+
+.contactDesc {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+/* Formulario: ya tiene flex, pero puedes ajustar el ancho y márgenes */
+.contactForm {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;            /* Asegura que el formulario ocupe todo el ancho disponible */
+    max-width: 60rem;       /* Máximo tamaño para el formulario */
+}
+
+/* Estilos de los campos de entrada */
+.name, .email, .message {
+    color: #4F4F4F;
+    font-size: 1rem;
+    width: 100%;           /* Ocupa el 100% del ancho disponible dentro del formulario */
+    max-width: 40rem;      /* Limita el tamaño máximo de cada campo */
+    border: 2px solid #4F4F4F;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background: white;
+}
+
+/* Estilo del botón de envío */
+.submit {
+    background: white;
+    border: 2px solid #4F4F4F;
+    border-radius: 0.5rem;
+    padding: 0.75rem 3.5rem;
+    margin: 2rem;
+    cursor: pointer;
+    transition: color 0.4s ease, border-color 0.4s ease;
+}
+
+.submit:hover {
+    color: #FA996C;
+    border-color: #FA996C;
+}
+
+/* Enlaces de redes sociales (o similares) */
+.links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.link {
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin: 0 0.75rem;
+}
